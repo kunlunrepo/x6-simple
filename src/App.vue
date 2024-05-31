@@ -10,7 +10,8 @@
 <!--    <CustomEdgeView></CustomEdgeView>-->
 <!--  <UpdateEdgeView></UpdateEdgeView>-->
 <!--  <PortView></PortView>-->
-  <UpdatePortView></UpdatePortView>
+<!--  <UpdatePortView></UpdatePortView>-->
+  <ConnectingView></ConnectingView>
 </template>
 
 <script setup lang="ts">
@@ -26,6 +27,7 @@ import CustomNodeView from "@/views/flow/node/CustomNodeView.vue";
 import UpdateNodeView from "@/views/flow/node/UpdateNodeView.vue";
 import PortView from "@/views/flow/port/PortView.vue";
 import UpdatePortView from "@/views/flow/port/UpdatePortView.vue";
+import ConnectingView from "@/views/flow/connecting/ConnectingView.vue";
 
 </script>
 
