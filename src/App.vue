@@ -11,7 +11,8 @@
 <!--  <UpdateEdgeView></UpdateEdgeView>-->
 <!--  <PortView></PortView>-->
 <!--  <UpdatePortView></UpdatePortView>-->
-  <ConnectingView></ConnectingView>
+<!--  <ConnectingView></ConnectingView>-->
+  <ValidateConnectingView></ValidateConnectingView>
 </template>
 
 <script setup lang="ts">
@@ -28,6 +29,7 @@ import UpdateNodeView from "@/views/flow/node/UpdateNodeView.vue";
 import PortView from "@/views/flow/port/PortView.vue";
 import UpdatePortView from "@/views/flow/port/UpdatePortView.vue";
 import ConnectingView from "@/views/flow/connecting/ConnectingView.vue";
+import ValidateConnectingView from "@/views/flow/connecting/ValidateConnectingView.vue";
 
 </script>
 
