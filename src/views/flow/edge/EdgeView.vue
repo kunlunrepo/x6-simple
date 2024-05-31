@@ -114,6 +114,11 @@ onMounted(() => {
             { x: 300, y: 120,}, // 第二个点
         ],
         router: 'orth', // 路由，对vertices进行处理，还会必要时添加额外点
+        // 如果没有 args 参数，可以简写写 connector: 'rounded'
+        connector: { // 连接器，对路由的点进行处理
+            name: 'rounded',
+            args: {},
+        },
     })
     // 数据导出
     // console.log("画布的数据", graph.toJSON());
