@@ -1,7 +1,7 @@
 <template>
   <!--画布容器-->
-    <div style="width: 100vw; height: 100vh">
-        <div id="container"></div>
+    <div style="width: 100vw; height: 100vh" className="backgournd-grid-app">
+        <div id="container" class="app-content"></div>
     </div>
 </template>
 
@@ -75,26 +75,59 @@ onMounted(() => {
     // 创建画布
     const graph = new Graph({
         container: document.getElementById('container'),
-        width: 800,
-        height: 600,
+        autoResize: true,
         background: {
-            color: '#F2F7FA'
+            color: '#F2F7FA',
         },
-        autoResize: true
+        grid: {
+            visible: true,
+            type: 'doubleMesh',
+            args: [
+                {
+                    color: '#eee', // 主网格线颜色
+                    thickness: 1, // 主网格线宽度
+                },
+                {
+                    color: '#ddd', // 次网格线颜色
+                    thickness: 1, // 次网格线宽度
+                    factor: 4, // 主次网格线间隔
+                },
+            ],
+
+        },
     })
+    // 开启画布平移
+    graph.enablePanning();
+    // 开启画布滚轮缩放
+    graph.enableMouseWheel();
     // console.log(graph);
+
 
     // 数据渲染
     graph.fromJSON(data)
     // 属性：居中显示
     graph.centerContent()
     // 数据导出
-    console.log("画布的数据", graph.toJSON());
+    // console.log("画布的数据", graph.toJSON());
 })
 
 
 </script>
 
-<style scoped>
+<style>
+.backgournd-grid-app {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    font-family: sans-serif;
 
+    .app-content {
+        flex: 1;
+        height: 280px;
+        margin-right: 8px;
+        margin-left: 8px;
+        border-radius: 5px;
+        box-shadow: 0 12px 5px -10px rgb(0 0 0 / 10%), 0 0 4px 0 rgb(0 0 0 / 10%);
+    }
+}
 </style>
