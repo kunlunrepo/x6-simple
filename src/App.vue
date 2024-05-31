@@ -1,6 +1,6 @@
 <template>
 <!--    <GraphView></GraphView>-->
-    <NodeView></NodeView>
+<!--    <NodeView></NodeView>-->
 <!--    <CustomNodeView></CustomNodeView>-->
 <!--    <UpdateNodeView></UpdateNodeView>-->
 <!--  <EdgeView></EdgeView>-->
@@ -9,6 +9,7 @@
 <!--    <CustomMarkerView></CustomMarkerView>-->
 <!--    <CustomEdgeView></CustomEdgeView>-->
 <!--  <UpdateEdgeView></UpdateEdgeView>-->
+  <PortView></PortView>
 </template>
 
 <script setup lang="ts">
@@ -22,6 +23,7 @@ import GraphView from "@/views/flow/graph/GraphView.vue";
 import NodeView from "@/views/flow/node/NodeView.vue";
 import CustomNodeView from "@/views/flow/node/CustomNodeView.vue";
 import UpdateNodeView from "@/views/flow/node/UpdateNodeView.vue";
+import PortView from "@/views/flow/port/PortView.vue";
 
 </script>
 
