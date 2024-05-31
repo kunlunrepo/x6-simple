@@ -2,12 +2,12 @@
   <!--画布容器-->
     <div style="width: 100vw; height: 100vh" className="backgournd-grid-app">
         <div style="display: flex; flex-direction: column; margin-right: 10px">
-            <div><input type="checkbox" v-model="allowBlank" @change="onChange('allowBlank')">allowBlank</div>
-            <div><input type="checkbox" v-model="allowMulti" @change="onChange('allowMulti')">allowMulti</div>
-            <div><input type="checkbox" v-model="allowLoop" @change="onChange('allowLoop')">allowLoop</div>
-            <div><input type="checkbox" v-model="allowNode" @change="onChange('allowNode')">allowNode</div>
-            <div><input type="checkbox" v-model="allowEdge" @change="onChange('allowEdge')">allowEdge</div>
-            <div><input type="checkbox" v-model="allowPort" @change="onChange('allowPort')">allowPort</div>
+            <div><input type="checkbox" v-model="allowBlank" @change="onChange()">allowBlank</div>
+            <div><input type="checkbox" v-model="allowMulti" @change="onChange()">allowMulti</div>
+            <div><input type="checkbox" v-model="allowLoop" @change="onChange()">allowLoop</div>
+            <div><input type="checkbox" v-model="allowNode" @change="onChange()">allowNode</div>
+            <div><input type="checkbox" v-model="allowEdge" @change="onChange()">allowEdge</div>
+            <div><input type="checkbox" v-model="allowPort" @change="onChange()">allowPort</div>
         </div>
         <div id="container" class="app-content"></div>
     </div>
