@@ -119,6 +119,26 @@ onMounted(() => {
             name: 'rounded',
             args: {},
         },
+        labels: [ // 边的标签
+            {
+                attrs: {
+                    label: {
+                        text: '40%',
+                        stroke: '#aaa',
+                    }
+                },
+                position: 0.4
+            },
+            {
+                attrs: {
+                    label: {
+                        text: '60%',
+                        stroke: '#aaa',
+                    }
+                },
+                position: 0.6
+            }
+        ]
     })
     // 数据导出
     // console.log("画布的数据", graph.toJSON());
