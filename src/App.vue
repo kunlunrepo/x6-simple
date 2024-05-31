@@ -1,6 +1,7 @@
 <template>
 <!--  <EdgeView></EdgeView>-->
-    <MarkerView></MarkerView>
+    <EdgeLableView></EdgeLableView>
+<!--    <MarkerView></MarkerView>-->
 <!--    <CustomMarkerView></CustomMarkerView>-->
 <!--    <CustomEdgeView></CustomEdgeView>-->
 <!--  <UpdateEdgeView></UpdateEdgeView>-->
@@ -12,6 +13,7 @@ import UpdateEdgeView from "@/views/flow/edge/UpdateEdgeView.vue";
 import CustomEdgeView from "@/views/flow/edge/CustomEdgeView.vue";
 import CustomMarkerView from "@/views/flow/edge/CustomMarkerView.vue";
 import MarkerView from "@/views/flow/edge/MarkerView.vue";
+import EdgeLableView from "@/views/flow/edge/EdgeLableView.vue";
 
 </script>
 
