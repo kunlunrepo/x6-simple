@@ -55,7 +55,7 @@ onMounted(() => {
     graph.enableMouseWheel();
     // console.log(graph);
     // 属性：居中显示
-    graph.centerContent()
+    // graph.centerContent()
 
     // 注册定制节点
     Graph.registerNode(
@@ -153,7 +153,7 @@ onMounted(() => {
         ]
     })
 
-    // 内置-渲染箭头
+    // 内置-箭头
     markers.forEach((marker, i) => {
         graph.addEdge({
             sourcePoint: [120, 300 + i * 40],
@@ -168,6 +168,30 @@ onMounted(() => {
                 },
             },
         })
+    })
+
+    // 定制-箭头
+    graph.addEdge({
+        source: [500, 140],
+        target: [800, 140],
+        label: '自定义箭头',
+        attrs: {
+            line: {
+                sourceMarker: {
+                    tagName: 'path',
+                    d: 'M 20 -10 0 0 20 10 Z',
+                },
+                targetMarker: {
+                    tagName: 'path',
+                    stroke: '#D94111',
+                    strokeWidth: 2,
+                    fill: '#90C54C',
+                    d: 'M 20 -10 0 0 20 10 Z',
+                },
+                stroke: '#8f8f8f',
+                strokeWidth: 1,
+            },
+        },
     })
 })
 
