@@ -1,5 +1,8 @@
 <template>
-    <GraphView></GraphView>
+<!--    <GraphView></GraphView>-->
+    <NodeView></NodeView>
+<!--    <CustomNodeView></CustomNodeView>-->
+<!--    <UpdateNodeView></UpdateNodeView>-->
 <!--  <EdgeView></EdgeView>-->
 <!--    <EdgeLableView></EdgeLableView>-->
 <!--    <MarkerView></MarkerView>-->
@@ -16,6 +19,9 @@ import CustomMarkerView from "@/views/flow/edge/CustomMarkerView.vue";
 import MarkerView from "@/views/flow/edge/MarkerView.vue";
 import EdgeLableView from "@/views/flow/edge/EdgeLableView.vue";
 import GraphView from "@/views/flow/graph/GraphView.vue";
+import NodeView from "@/views/flow/node/NodeView.vue";
+import CustomNodeView from "@/views/flow/node/CustomNodeView.vue";
+import UpdateNodeView from "@/views/flow/node/UpdateNodeView.vue";
 
 </script>
 
