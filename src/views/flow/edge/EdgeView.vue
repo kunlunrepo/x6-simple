@@ -66,7 +66,7 @@ onMounted(() => {
         }, // 定制节点配置
         true,)
 
-// 注册-自定义边
+    // 注册-自定义边
     Graph.registerEdge('double-edge', {
         inherit: 'edge',
         markup: [
@@ -107,7 +107,7 @@ onMounted(() => {
         },
     })
 
-// 注册-自定义边
+    // 注册-自定义边
     Graph.registerEdge('shadow-edge', {
         inherit: 'edge',
         markup: [
@@ -209,6 +209,7 @@ onMounted(() => {
         y: 40,
         label: 'Hello',
     })
+
     // 定制-添加节点
     const target = graph.addNode({
         shape: 'custom-node',
@@ -216,6 +217,7 @@ onMounted(() => {
         y: 220,
         label: 'World',
     })
+
     // 添加边
     graph.addEdge({
         source,
@@ -313,25 +315,6 @@ onMounted(() => {
         target: [1000, 280],
     })
 })
-
-// 修改节点大小
-const onChangeProp = () => {
-    const nodes = graph.getNodes();
-    nodes.forEach((node) => {
-        const width = 100 + Math.floor(Math.random() * 50)
-        const height = 40 + Math.floor(Math.random() * 10)
-        node.prop('size', {width, height})
-    })
-}
-
-// 修改节点样式
-const onChangeAttr = () => {
-    const nodes = graph.getNodes();
-    nodes.forEach((node) => {
-        const color = Color.random().toHex()
-        node.attr('body/fill', color)
-    })
-}
 </script>
 
 <style>
