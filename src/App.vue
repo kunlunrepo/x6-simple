@@ -15,7 +15,8 @@
 <!--  <ValidateConnectingView></ValidateConnectingView>-->
 <!--  <EmbeddingConnectingView></EmbeddingConnectingView>-->
 <!--  <HighlightingConnectingView></HighlightingConnectingView>-->
-  <InteractingConnectingView></InteractingConnectingView>
+<!--  <InteractingConnectingView></InteractingConnectingView>-->
+  <EventView></EventView>
 </template>
 
 <script setup lang="ts">
@@ -36,6 +37,7 @@ import ValidateConnectingView from "@/views/flow/connecting/ValidateConnectingVi
 import EmbeddingConnectingView from "@/views/flow/connecting/EmbeddingConnectingView.vue";
 import HighlightingConnectingView from "@/views/flow/connecting/HighlightingConnectingView.vue";
 import InteractingConnectingView from "@/views/flow/connecting/InteractingConnectingView.vue";
+import EventView from "@/views/flow/event/EventView.vue";
 
 </script>
 
