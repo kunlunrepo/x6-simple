@@ -1,12 +1,14 @@
 <template>
   <!--画布容器-->
     <div style="width: 100vw; height: 100vh" className="backgournd-grid-app">
+        <button style="width: 100px; height: 50px" @click="onChangeProp">修改prop</button>
+        <button style="width: 100px; height: 50px" @click="onChangeAttr">修改attr</button>
         <div id="container" class="app-content"></div>
     </div>
 </template>
 
 <script setup lang="ts">
-import {Graph} from "@antv/x6";
+import {Color, Graph} from "@antv/x6";
 import {onMounted} from "vue";
 
 /**
@@ -71,9 +73,12 @@ const data: any = {
     ],
 }
 
+// 画布
+let graph = null
+
 onMounted(() => {
     // 创建画布
-    const graph = new Graph({
+     graph = new Graph({
         container: document.getElementById('container'),
         autoResize: true,
         background: {
@@ -203,11 +208,93 @@ onMounted(() => {
         attrs: commonAttrs,
     })
 
-
+    // 注册定制节点
+    Graph.registerNode(
+        'custom-node', // 定制节点名称
+        {
+            inherit: 'rect', // 继承于 rect 节点
+            width: 100,
+            height: 40,
+            markup: [ // HTML
+                {
+                    tagName: 'rect', // 标签名称
+                    selector: 'body', // 选择器
+                },
+                {
+                    tagName: 'image',
+                    selector: 'img',
+                },
+                {
+                    tagName: 'text',
+                    selector: 'label',
+                },
+            ],
+            attrs: { // CSS
+                body: {
+                    stroke: '#8f8f8f',
+                    strokeWidth: 1,
+                    fill: '#fff',
+                    rx: 6,
+                    ry: 6,
+                },
+                img: {
+                    'xlink:href':
+                        'https://gw.alipayobjects.com/zos/antfincdn/FLrTNDvlna/antv.png',
+                    width: 16,
+                    height: 16,
+                    x: 12,
+                    y: 12,
+                },
+            },
+        }, // 定制节点配置
+        true,)
+    // 定制-添加节点
+    const source = graph.addNode({
+        shape: 'custom-node',
+        x: 120,
+        y: 240,
+        label: 'Hello',
+    })
+    // 定制-添加节点
+    const target = graph.addNode({
+        shape: 'custom-node',
+        x: 520,
+        y: 300,
+        label: 'World',
+    })
+    // 添加边
+    graph.addEdge({
+        source,
+        target,
+        attrs: {
+            line: {
+                stroke: '#8f8f8f',
+                strokeWidth: 1,
+            },
+        }
+    })
     // 数据导出
     // console.log("画布的数据", graph.toJSON());
 })
 
+// 修改节点大小
+const onChangeProp = () => {
+    const nodes = graph.getNodes();
+    nodes.forEach((node) => {
+        const width = 100 + Math.floor(Math.random() * 50)
+        const height = 40 + Math.floor(Math.random() * 10)
+        node.prop('size', {width, height})
+    })
+}
+
+// 修改节点样式
+const onChangeAttr = () => {
+    const nodes = graph.getNodes();
+    nodes.forEach((node) => {
+        const color = Color.random().toHex()
+        node.attr('body/fill', color)
+    })
+}
 
 </script>
 
