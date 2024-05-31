@@ -29,10 +29,10 @@ onMounted(() => {
 })
 
 const initData = () => {
-    if (graph) {
-        // 销毁画布
-        graph.dispose()
-    }
+    // if (graph) {
+    //     // 销毁画布
+    //     graph.dispose()
+    // }
     // 交互限制配置
     const options = {
         nodeMovable: nodeMovable.value,

@@ -33,10 +33,10 @@ onMounted(() => {
 })
 
 const initData = () => {
-    if (graph) {
-        // 销毁画布
-        graph.dispose()
-    }
+    // if (graph) {
+    //     // 销毁画布
+    //     graph.dispose()
+    // }
     // 连线配置
     const options = {
         allowBlank: allowBlank.value,

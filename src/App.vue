@@ -17,7 +17,8 @@
 <!--  <HighlightingConnectingView></HighlightingConnectingView>-->
 <!--  <InteractingConnectingView></InteractingConnectingView>-->
 <!--  <EventView></EventView>-->
-  <CustomEventView></CustomEventView>
+<!--  <CustomEventView></CustomEventView>-->
+  <DataView></DataView>
 </template>
 
 <script setup lang="ts">
@@ -40,6 +41,7 @@ import HighlightingConnectingView from "@/views/flow/connecting/HighlightingConn
 import InteractingConnectingView from "@/views/flow/connecting/InteractingConnectingView.vue";
 import EventView from "@/views/flow/event/EventView.vue";
 import CustomEventView from "@/views/flow/event/CustomEventView.vue";
+import DataView from "@/views/flow/data/DataView.vue";
 
 </script>
 
