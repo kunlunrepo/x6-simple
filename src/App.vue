@@ -9,7 +9,8 @@
 <!--    <CustomMarkerView></CustomMarkerView>-->
 <!--    <CustomEdgeView></CustomEdgeView>-->
 <!--  <UpdateEdgeView></UpdateEdgeView>-->
-  <PortView></PortView>
+<!--  <PortView></PortView>-->
+  <UpdatePortView></UpdatePortView>
 </template>
 
 <script setup lang="ts">
@@ -24,6 +25,7 @@ import NodeView from "@/views/flow/node/NodeView.vue";
 import CustomNodeView from "@/views/flow/node/CustomNodeView.vue";
 import UpdateNodeView from "@/views/flow/node/UpdateNodeView.vue";
 import PortView from "@/views/flow/port/PortView.vue";
+import UpdatePortView from "@/views/flow/port/UpdatePortView.vue";
 
 </script>
 
