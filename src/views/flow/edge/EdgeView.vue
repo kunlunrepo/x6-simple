@@ -12,6 +12,18 @@ import {onMounted} from "vue";
 // 画布
 let graph = null
 
+// 内置-箭头
+const markers = [
+    'block',
+    'classic',
+    'diamond',
+    'circle',
+    'circlePlus',
+    'ellipse',
+    'cross',
+    'async',
+]
+
 onMounted(() => {
     // 创建画布
     graph = new Graph({
@@ -140,8 +152,23 @@ onMounted(() => {
             }
         ]
     })
-    // 数据导出
-    // console.log("画布的数据", graph.toJSON());
+
+    // 内置-渲染箭头
+    markers.forEach((marker, i) => {
+        graph.addEdge({
+            sourcePoint: [120, 300 + i * 40],
+            targetPoint: [400, 300 + i * 40],
+            label: marker,
+            attrs: {
+                line: {
+                    sourceMarker: marker,
+                    targetMarker: marker,
+                    stroke: '#8f8f8f',
+                    strokeWidth: 1,
+                },
+            },
+        })
+    })
 })
 
 // 修改节点大小
