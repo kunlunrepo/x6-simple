@@ -112,7 +112,8 @@ onMounted(() => {
         vertices: [ // 顶点
             { x: 100, y: 200,}, // 第一个点
             { x: 300, y: 120,}, // 第二个点
-        ]
+        ],
+        router: 'orth', // 路由，对vertices进行处理，还会必要时添加额外点
     })
     // 数据导出
     // console.log("画布的数据", graph.toJSON());
