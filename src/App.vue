@@ -12,7 +12,8 @@
 <!--  <PortView></PortView>-->
 <!--  <UpdatePortView></UpdatePortView>-->
 <!--  <ConnectingView></ConnectingView>-->
-  <ValidateConnectingView></ValidateConnectingView>
+<!--  <ValidateConnectingView></ValidateConnectingView>-->
+  <EmbeddingConnectingView></EmbeddingConnectingView>
 </template>
 
 <script setup lang="ts">
@@ -30,6 +31,7 @@ import PortView from "@/views/flow/port/PortView.vue";
 import UpdatePortView from "@/views/flow/port/UpdatePortView.vue";
 import ConnectingView from "@/views/flow/connecting/ConnectingView.vue";
 import ValidateConnectingView from "@/views/flow/connecting/ValidateConnectingView.vue";
+import EmbeddingConnectingView from "@/views/flow/connecting/EmbeddingConnectingView.vue";
 
 </script>
 
