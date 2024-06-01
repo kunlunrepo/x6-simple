@@ -22,7 +22,8 @@
 <!--  <BaseConnectingView></BaseConnectingView>-->
 <!--  <AdvConnectingView></AdvConnectingView>-->
 <!--  <ToolsView></ToolsView>-->
-  <FunToolsView></FunToolsView>
+<!--  <FunToolsView></FunToolsView>-->
+  <GroupView></GroupView>
 </template>
 
 <script setup lang="ts">
@@ -50,6 +51,7 @@ import AdvConnectingView from "@/views/flow/adv/connecting/AdvConnectingView.vue
 import BaseConnectingView from "@/views/flow/adv/connecting/BaseConnectingView.vue";
 import ToolsView from "@/views/flow/adv/tools/ToolsView.vue";
 import FunToolsView from "@/views/flow/adv/tools/FunToolsView.vue";
+import GroupView from "@/views/flow/adv/group/GroupView.vue";
 
 </script>
 
