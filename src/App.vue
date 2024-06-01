@@ -27,7 +27,8 @@
 <!--  <EmbeddingGroupView></EmbeddingGroupView>-->
 <!--  <TranslatingGroupView></TranslatingGroupView>-->
 <!--  <VueNodeView></VueNodeView>-->
-  <HtmlNodeView></HtmlNodeView>
+<!--  <HtmlNodeView></HtmlNodeView>-->
+  <UpdateHtmlNodeView></UpdateHtmlNodeView>
 </template>
 
 <script setup lang="ts">
@@ -61,6 +62,7 @@ import TranslatingGroupView from "@/views/flow/adv/group/TranslatingGroupView.vu
 import VueNodeView from "@/views/flow/adv/vue/VueNodeView.vue";
 import ProgressNode from "@/views/flow/adv/vue/ProgressNode.vue";
 import HtmlNodeView from "@/views/flow/adv/html/HtmlNodeView.vue";
+import UpdateHtmlNodeView from "@/views/flow/adv/html/UpdateHtmlNodeView.vue";
 
 </script>
 
