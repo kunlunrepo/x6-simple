@@ -9,7 +9,6 @@
 import {Color, Graph, Shape} from "@antv/x6";
 import {onMounted, ref} from "vue";
 
-
 // 画布
 let graph = null
 
@@ -18,6 +17,28 @@ onMounted(() => {
 })
 
 const initData = () => {
+    // if (graph) {
+    //     // 销毁画布
+    //     graph.dispose()
+    // }
+    Graph.registerNode(
+        'custom-node',
+        {
+            inherit: 'rect',
+            width: 100,
+            height: 40,
+            attrs: {
+                body: {
+                    stroke: '#8f8f8f',
+                    strokeWidth: 1,
+                    fill: '#fff',
+                    rx: 6,
+                    ry: 6,
+                },
+            },
+        },
+        true,
+    )
     // 创建画布
     graph = new Graph({
         container: document.getElementById('container'),
@@ -40,7 +61,7 @@ const initData = () => {
                 },
             ],
 
-        }
+        },
     })
     // 开启画布平移
     graph.enablePanning();
@@ -53,44 +74,40 @@ const initData = () => {
     // graph.centerContent()
 
     const source = graph.addNode({
+        shape: 'custom-node',
         x: 40,
-        y: 40,
-        width: 100,
-        height: 40,
-        label: 'Hello',
-        attrs: {
-            body: {
-                stroke: '#8f8f8f',
-                strokeWidth: 1,
-                fill: '#fff',
-                rx: 6,
-                ry: 6,
-            },
-        },
+        y: 200,
+        label: 'hello',
     })
 
     const target = graph.addNode({
-        x: 240,
-        y: 180,
-        width: 100,
-        height: 40,
-        shape: 'ellipse',
-        label: 'World',
-        attrs: {
-            body: {
-                stroke: '#8f8f8f',
-                strokeWidth: 1,
-                fill: '#fff',
-                rx: 6,
-                ry: 6,
-            },
-        },
+        shape: 'custom-node',
+        x: 300,
+        y: 80,
+        label: 'world',
     })
 
     graph.addEdge({
-        source,
-        target,
-        label: 'X6',
+        source: {
+            cell: source,
+            anchor: {
+                name: 'right',
+                args: {
+                    dy: -10,
+                },
+            },
+            connectionPoint: 'anchor',
+        },
+        target: {
+            cell: target,
+            anchor: {
+                name: 'left',
+                args: {
+                    dy: -10,
+                },
+            },
+            connectionPoint: 'anchor',
+        },
         attrs: {
             line: {
                 stroke: '#8f8f8f',
@@ -99,10 +116,57 @@ const initData = () => {
         },
     })
 
-    graph.on('cell:change:*', () => {
-        console.log('cell:change:*', graph.toJSON())
+    graph.addEdge({
+        source: {
+            cell: source,
+            anchor: {
+                name: 'right',
+            },
+            connectionPoint: 'anchor',
+        },
+        target: {
+            cell: target,
+            anchor: {
+                name: 'left',
+            },
+            connectionPoint: 'anchor',
+        },
+        attrs: {
+            line: {
+                stroke: '#8f8f8f',
+                strokeWidth: 1,
+            },
+        },
     })
 
+    graph.addEdge({
+        source: {
+            cell: source,
+            anchor: {
+                name: 'right',
+                args: {
+                    dy: 10,
+                },
+            },
+            connectionPoint: 'anchor',
+        },
+        target: {
+            cell: target,
+            anchor: {
+                name: 'left',
+                args: {
+                    dy: 10,
+                },
+            },
+            connectionPoint: 'anchor',
+        },
+        attrs: {
+            line: {
+                stroke: '#8f8f8f',
+                strokeWidth: 1,
+            },
+        },
+    })
 }
 
 </script>
