@@ -33,7 +33,8 @@
 <!--  <ClipboardView></ClipboardView>-->
 <!--  <KeyboardView></KeyboardView>-->
 <!--  <HistoryView></HistoryView>-->
-  <SelectionView></SelectionView>
+<!--  <SelectionView></SelectionView>-->
+  <MinimapView></MinimapView>
 </template>
 
 <script setup lang="ts">
@@ -73,6 +74,7 @@ import ClipboardView from "@/views/flow/plugin/clipboard/ClipboardView.vue";
 import KeyboardView from "@/views/flow/plugin/keyboard/KeyboardView.vue";
 import HistoryView from "@/views/flow/plugin/history/HistoryView.vue";
 import SelectionView from "@/views/flow/plugin/selection/SelectionView.vue";
+import MinimapView from "@/views/flow/plugin/minimap/MinimapView.vue";
 
 </script>
 
