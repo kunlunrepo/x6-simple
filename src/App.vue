@@ -29,7 +29,8 @@
 <!--  <VueNodeView></VueNodeView>-->
 <!--  <HtmlNodeView></HtmlNodeView>-->
 <!--  <UpdateHtmlNodeView></UpdateHtmlNodeView>-->
-  <SnaplineView></SnaplineView>
+<!--  <SnaplineView></SnaplineView>-->
+  <ClipboardView></ClipboardView>
 </template>
 
 <script setup lang="ts">
@@ -65,6 +66,7 @@ import ProgressNode from "@/views/flow/adv/vue/ProgressNode.vue";
 import HtmlNodeView from "@/views/flow/adv/html/HtmlNodeView.vue";
 import UpdateHtmlNodeView from "@/views/flow/adv/html/UpdateHtmlNodeView.vue";
 import SnaplineView from "@/views/flow/plugin/snapline/SnaplineView.vue";
+import ClipboardView from "@/views/flow/plugin/clipboard/ClipboardView.vue";
 
 </script>
 
