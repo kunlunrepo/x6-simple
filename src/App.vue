@@ -32,7 +32,8 @@
 <!--  <SnaplineView></SnaplineView>-->
 <!--  <ClipboardView></ClipboardView>-->
 <!--  <KeyboardView></KeyboardView>-->
-  <HistoryView></HistoryView>
+<!--  <HistoryView></HistoryView>-->
+  <SelectionView></SelectionView>
 </template>
 
 <script setup lang="ts">
@@ -71,6 +72,7 @@ import SnaplineView from "@/views/flow/plugin/snapline/SnaplineView.vue";
 import ClipboardView from "@/views/flow/plugin/clipboard/ClipboardView.vue";
 import KeyboardView from "@/views/flow/plugin/keyboard/KeyboardView.vue";
 import HistoryView from "@/views/flow/plugin/history/HistoryView.vue";
+import SelectionView from "@/views/flow/plugin/selection/SelectionView.vue";
 
 </script>
 
