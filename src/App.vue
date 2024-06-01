@@ -25,7 +25,15 @@
 <!--  <FunToolsView></FunToolsView>-->
 <!--  <GroupView></GroupView>-->
 <!--  <EmbeddingGroupView></EmbeddingGroupView>-->
-  <TranslatingGroupView></TranslatingGroupView>
+<!--  <TranslatingGroupView></TranslatingGroupView>-->
+  <VueNodeView></VueNodeView>
+<!--  <ProgressNode></ProgressNode>-->
+<!--    <el-button>Default</el-button>-->
+<!--    <el-button type="primary">Primary</el-button>-->
+<!--    <el-button type="success">Success</el-button>-->
+<!--    <el-button type="info">Info</el-button>-->
+<!--    <el-button type="warning">Warning</el-button>-->
+<!--    <el-button type="danger">Danger</el-button>-->
 </template>
 
 <script setup lang="ts">
@@ -56,6 +64,8 @@ import FunToolsView from "@/views/flow/adv/tools/FunToolsView.vue";
 import GroupView from "@/views/flow/adv/group/GroupView.vue";
 import EmbeddingGroupView from "@/views/flow/adv/group/EmbeddingGroupView.vue";
 import TranslatingGroupView from "@/views/flow/adv/group/TranslatingGroupView.vue";
+import VueNodeView from "@/views/flow/adv/vue/VueNodeView.vue";
+import ProgressNode from "@/views/flow/adv/vue/ProgressNode.vue";
 
 </script>
 
