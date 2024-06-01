@@ -36,7 +36,8 @@
 <!--  <SelectionView></SelectionView>-->
 <!--  <MinimapView></MinimapView>-->
 <!--  <DndView></DndView>-->
-  <StencilView></StencilView>
+<!--  <StencilView></StencilView>-->
+  <ExportView></ExportView>
 </template>
 
 <script setup lang="ts">
@@ -79,6 +80,7 @@ import SelectionView from "@/views/flow/plugin/selection/SelectionView.vue";
 import MinimapView from "@/views/flow/plugin/minimap/MinimapView.vue";
 import DndView from "@/views/flow/plugin/dnd/DndView.vue";
 import StencilView from "@/views/flow/plugin/stencil/StencilView.vue";
+import ExportView from "@/views/flow/plugin/export/ExportView.vue";
 
 </script>
 
