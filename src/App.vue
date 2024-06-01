@@ -21,7 +21,8 @@
 <!--  <DataView></DataView>-->
 <!--  <BaseConnectingView></BaseConnectingView>-->
 <!--  <AdvConnectingView></AdvConnectingView>-->
-  <ToolsView></ToolsView>
+<!--  <ToolsView></ToolsView>-->
+  <FunToolsView></FunToolsView>
 </template>
 
 <script setup lang="ts">
@@ -48,6 +49,7 @@ import DataView from "@/views/flow/data/DataView.vue";
 import AdvConnectingView from "@/views/flow/adv/connecting/AdvConnectingView.vue";
 import BaseConnectingView from "@/views/flow/adv/connecting/BaseConnectingView.vue";
 import ToolsView from "@/views/flow/adv/tools/ToolsView.vue";
+import FunToolsView from "@/views/flow/adv/tools/FunToolsView.vue";
 
 </script>
 
