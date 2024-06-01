@@ -19,8 +19,9 @@
 <!--  <EventView></EventView>-->
 <!--  <CustomEventView></CustomEventView>-->
 <!--  <DataView></DataView>-->
-  <BaseConnectingView></BaseConnectingView>
+<!--  <BaseConnectingView></BaseConnectingView>-->
 <!--  <AdvConnectingView></AdvConnectingView>-->
+  <ToolsView></ToolsView>
 </template>
 
 <script setup lang="ts">
@@ -46,6 +47,7 @@ import CustomEventView from "@/views/flow/event/CustomEventView.vue";
 import DataView from "@/views/flow/data/DataView.vue";
 import AdvConnectingView from "@/views/flow/adv/connecting/AdvConnectingView.vue";
 import BaseConnectingView from "@/views/flow/adv/connecting/BaseConnectingView.vue";
+import ToolsView from "@/views/flow/adv/tools/ToolsView.vue";
 
 </script>
 
