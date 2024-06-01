@@ -24,7 +24,8 @@
 <!--  <ToolsView></ToolsView>-->
 <!--  <FunToolsView></FunToolsView>-->
 <!--  <GroupView></GroupView>-->
-  <EmbeddingGroupView></EmbeddingGroupView>
+<!--  <EmbeddingGroupView></EmbeddingGroupView>-->
+  <TranslatingGroupView></TranslatingGroupView>
 </template>
 
 <script setup lang="ts">
@@ -54,6 +55,7 @@ import ToolsView from "@/views/flow/adv/tools/ToolsView.vue";
 import FunToolsView from "@/views/flow/adv/tools/FunToolsView.vue";
 import GroupView from "@/views/flow/adv/group/GroupView.vue";
 import EmbeddingGroupView from "@/views/flow/adv/group/EmbeddingGroupView.vue";
+import TranslatingGroupView from "@/views/flow/adv/group/TranslatingGroupView.vue";
 
 </script>
 
