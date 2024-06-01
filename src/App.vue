@@ -23,7 +23,8 @@
 <!--  <AdvConnectingView></AdvConnectingView>-->
 <!--  <ToolsView></ToolsView>-->
 <!--  <FunToolsView></FunToolsView>-->
-  <GroupView></GroupView>
+<!--  <GroupView></GroupView>-->
+  <EmbeddingGroupView></EmbeddingGroupView>
 </template>
 
 <script setup lang="ts">
@@ -52,6 +53,7 @@ import BaseConnectingView from "@/views/flow/adv/connecting/BaseConnectingView.v
 import ToolsView from "@/views/flow/adv/tools/ToolsView.vue";
 import FunToolsView from "@/views/flow/adv/tools/FunToolsView.vue";
 import GroupView from "@/views/flow/adv/group/GroupView.vue";
+import EmbeddingGroupView from "@/views/flow/adv/group/EmbeddingGroupView.vue";
 
 </script>
 
