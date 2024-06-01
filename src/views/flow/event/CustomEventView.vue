@@ -8,7 +8,7 @@
 <script setup lang="ts">
 import {Color, Graph, Shape} from "@antv/x6";
 import {onMounted, ref} from "vue";
-import {ValidateConnectionArgs} from "@antv/x6/src/graph/options";
+
 
 // 画布
 let graph = null
