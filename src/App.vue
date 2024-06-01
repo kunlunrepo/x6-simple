@@ -28,7 +28,8 @@
 <!--  <TranslatingGroupView></TranslatingGroupView>-->
 <!--  <VueNodeView></VueNodeView>-->
 <!--  <HtmlNodeView></HtmlNodeView>-->
-  <UpdateHtmlNodeView></UpdateHtmlNodeView>
+<!--  <UpdateHtmlNodeView></UpdateHtmlNodeView>-->
+  <SnaplineView></SnaplineView>
 </template>
 
 <script setup lang="ts">
@@ -63,6 +64,7 @@ import VueNodeView from "@/views/flow/adv/vue/VueNodeView.vue";
 import ProgressNode from "@/views/flow/adv/vue/ProgressNode.vue";
 import HtmlNodeView from "@/views/flow/adv/html/HtmlNodeView.vue";
 import UpdateHtmlNodeView from "@/views/flow/adv/html/UpdateHtmlNodeView.vue";
+import SnaplineView from "@/views/flow/plugin/snapline/SnaplineView.vue";
 
 </script>
 
