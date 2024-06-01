@@ -30,7 +30,8 @@
 <!--  <HtmlNodeView></HtmlNodeView>-->
 <!--  <UpdateHtmlNodeView></UpdateHtmlNodeView>-->
 <!--  <SnaplineView></SnaplineView>-->
-  <ClipboardView></ClipboardView>
+<!--  <ClipboardView></ClipboardView>-->
+  <KeyboardView></KeyboardView>
 </template>
 
 <script setup lang="ts">
@@ -67,6 +68,7 @@ import HtmlNodeView from "@/views/flow/adv/html/HtmlNodeView.vue";
 import UpdateHtmlNodeView from "@/views/flow/adv/html/UpdateHtmlNodeView.vue";
 import SnaplineView from "@/views/flow/plugin/snapline/SnaplineView.vue";
 import ClipboardView from "@/views/flow/plugin/clipboard/ClipboardView.vue";
+import KeyboardView from "@/views/flow/plugin/keyboard/KeyboardView.vue";
 
 </script>
 
