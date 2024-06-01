@@ -31,7 +31,8 @@
 <!--  <UpdateHtmlNodeView></UpdateHtmlNodeView>-->
 <!--  <SnaplineView></SnaplineView>-->
 <!--  <ClipboardView></ClipboardView>-->
-  <KeyboardView></KeyboardView>
+<!--  <KeyboardView></KeyboardView>-->
+  <HistoryView></HistoryView>
 </template>
 
 <script setup lang="ts">
@@ -69,6 +70,7 @@ import UpdateHtmlNodeView from "@/views/flow/adv/html/UpdateHtmlNodeView.vue";
 import SnaplineView from "@/views/flow/plugin/snapline/SnaplineView.vue";
 import ClipboardView from "@/views/flow/plugin/clipboard/ClipboardView.vue";
 import KeyboardView from "@/views/flow/plugin/keyboard/KeyboardView.vue";
+import HistoryView from "@/views/flow/plugin/history/HistoryView.vue";
 
 </script>
 
